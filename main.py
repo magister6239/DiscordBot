@@ -11,7 +11,7 @@ bot.load_extension("Cogs.DbDm")
 bot.load_extension("Cogs.weather")
 
 cogs = list()
-for cog in os.listdir(f"{os.path.dirname(os.path.abspath(__file__))}\\Cogs"):
+for cog in os.listdir("Cogs"):
     if cog.endswith(".py"):
         cogs.append(cog[:-3])
 
